@@ -15,7 +15,7 @@ export const FormPage = () => {
 
   // Funcionalidades de formulario multi-step
   const handleCardSelect = (parentId) => {
-    setSelected(parentId)
+    setSelected(selected === parentId ? null : parentId)
   }
   const handleSubmit = (e) => {
     let message = { shape: selected, pieces: pieces.join('/')}
