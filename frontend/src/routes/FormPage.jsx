@@ -46,7 +46,7 @@ export const FormPage = () => {
                   ))
                 )}
               </div>
-              <CustomButton text={'Siguiente'} func={handleNextStep}/>
+              <CustomButton text={'Siguiente'} disabled={!selected} func={handleNextStep}/>
             </div>
           )}
 
