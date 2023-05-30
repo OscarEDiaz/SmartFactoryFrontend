@@ -4,6 +4,8 @@ import useCardData from '../hooks/useCardData';
 import useMediaQuery from '../hooks/useMediaQuery';
 import sendToBack from '../helpers/sendToBack';
 
+import '../styles/formPage.css'
+
 export const FormPage = () => {
 
   const API = process.env.REACT_APP_API;

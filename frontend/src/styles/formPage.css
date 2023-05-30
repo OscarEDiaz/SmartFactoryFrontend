@@ -1,97 +1,55 @@
-/*Importar fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;800&display=swap');
-
-/*Elementos base de css*/
-*{
-    margin: auto;
-    font-family: 'Encode Sans', sans-serif;
-}
-html {
-    scroll-behavior: smooth;
-}
-body{
-    background-color: #2A2B2E;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/*Scrollbar*/
-::-webkit-scrollbar {
-    width: 10px;
-}
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-::-webkit-scrollbar-thumb {
-    background: #888;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
-
-/*Formulario*/
-.content{
-    display: block;
-    height: 100%;
-    width: 100%;
-}
-.section1{
-    width: 100%;
-    background-color: #f1f1f1;
-    margin-bottom: 4%;
-}
-.section1 .header{
-    display: flex;
-    justify-content: space-around;
-    padding-top: 1.5%;
-    padding-bottom: 1.5%;
-}
-.section1 button{
-    color: #f1f1f1;
-    background-color: #2A2B2E;
-    height: 2em;
-    width: 7em;
-    font-size: large;
-    font-weight: bold;
-    border-radius: 5px;
-    border-style: hidden;
-    transition: all 400ms ease;
-}
-.section2{
-    height: 100%;
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
+/*Card styles*/
+.droppable{
+  padding: 1rem;
+} 
 .card{
-    background-color: #f1f1f1;
-    border-radius: 10px;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
-    padding: 15px;
-    transition: all 400ms ease;
-    margin-bottom: 3%;
-}
-.card_content{
-    height: 190px;
-    width: 200px;
-}
-.image{
-    width: 70%;
-    height: 70%;
-}
-.image img{
-    width: 100%;
-    border-radius: 10px;
-}
-
-/*Animaciones*/
-.section1 button:hover{
-    scale: 1.1;
+  background-color: #f1f1f1;
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  width: fit-content;
+  padding: 1rem;
+  margin: 0 0 15px 0;
+  transition: all 400ms ease;
 }
 .card:hover{
-    scale: 1.1;
-    font-weight: bold;
+  box-shadow: 0px 3px 20px rgba(21, 161, 255, 0.623);
+  transform: translateY(-1rem);
+}
+.selected{
+  box-shadow: 0px 3px 20px rgba(40, 255, 21, 0.623);
+}
+.selected:hover{
+  box-shadow: 0px 3px 20px rgba(40, 255, 21, 0.623);
+  transform: translateY(0);
+}
+.card-image{
+  height: 12rem;
+  width: 12rem;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.card-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/*Build form section-01*/
+#step-1 .card-image{
+  height: 4rem;
+  width: 4rem;
+}
+#step-1 .card .card-content{
+  display: none;
+}
+@media screen and (max-width: 800px){
+  #step-1 .card-image{
+    height: 6rem;
+    width: 6rem;
+  }
 }

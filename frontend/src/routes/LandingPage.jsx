@@ -2,6 +2,8 @@ import { CustomNavbar, CustomButton } from '../components/indexComponents'
 import { Footer } from '../components/Footer'
 import { Link } from 'react-router-dom';
 
+import '../styles/landingPage.css'
+
 export const LandingPage = () => {
   return (
     <section id='Landing'>
