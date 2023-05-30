@@ -1,5 +1,4 @@
-import { CustomNavbar } from '../components/CustomNavbar'
-import { CustomButton } from '../components/CustomButton'
+import { CustomNavbar, CustomButton } from '../components/indexComponents'
 import { Footer } from '../components/Footer'
 import { Link } from 'react-router-dom';
 

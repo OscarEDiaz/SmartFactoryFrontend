@@ -1,4 +1,4 @@
-import { CustomNavbar, CustomButton, CustomCard, Footer, Loading, Drag, Drop } from '../components/components'
+import { CustomNavbar, CustomButton, CustomCard, Footer, Loading, Drag, Drop } from '../components/indexComponents'
 import useMultiStepForm from '../hooks/useMultiStepForm';
 import useCardData from '../hooks/useCardData';
 import useMediaQuery from '../hooks/useMediaQuery';
