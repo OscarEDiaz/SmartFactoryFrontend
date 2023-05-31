@@ -16,11 +16,11 @@ export const LandingPage = () => {
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos labore inventore quos cumque fugit expedita quas ut ducimus corrupti quisquam a accusamus minima, facere, quibusdam obcaecati odit cupiditate, adipisci quidem?</p>
             <Link to='/build'><CustomButton text={"Empieza ahora"}/></Link>
           </div>
+          <div id='img-01'>
+            <img src={require("../assets/images/illustrations/robotics-Illustration_04.png")} alt="img-1" />
+          </div>
         </div>
       </section>
-      <div id='img-01'>
-        <img src={require("../assets/images/illustrations/robotics-Illustration_04.png")} alt="img-1" />
-      </div>
       <Footer/>
     </section>
   )

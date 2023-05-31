@@ -4,27 +4,59 @@
     height: calc(100vh - var(--NAV-HEIGHT));
 }
 .landing-01-container{
+    height: 100%;
     width: 70%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     transition: all 400ms ease;
 }
 .msg-block{
     max-width: 450px;
+    transform: translateY(-4rem);
+    z-index: 1;
 }
 .msg-block button{
     background-color: orange;
     border: 0;
     border-radius: 10px;
-    margin-top: 2rem;
+    margin-top: 1rem;
     padding: 10px;
     font-size: 14px;
 }
 #img-01{
-    width: 300px;
+    position: absolute;
+    max-width: 500px;
+    right: 7rem;
+    transform: translateY(4rem);
+    transition: all 400ms ease;
 }
 @media screen and (max-width: 1050px) {
     .landing-01-container{
         width: 90%;
+    }
+    #img-01{
+        right: 3rem;
+    }
+}
+@media screen and (max-width: 900px) {
+    #landing-01{
+        margin-top: 3rem;
+        height: fit-content;
+    }
+    .landing-01-container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .msg-block{
+        transform: translateY(1rem);
+    }
+    .msg-block h2{
+        margin: 10px 0;
+    }
+    #img-01{
+        width: 325px;
+        position: static;
+        transform: translateY(-1rem);
     }
 }
