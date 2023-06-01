@@ -1,6 +1,14 @@
 /*Variables css*/
 :root {
   --NAV-HEIGHT: 50px;
+
+  /*Color pallette*/
+  --contrast-color: orange;
+  --dark-contrast: rgb(211, 137, 0);
+  --middle-blue: blue;
+  --strong-blue: rgb(0, 0, 80);
+  --black: #1a1a1a;
+  --white: #f0f0f0;
 }
 
 /*Etiquetas base*/
@@ -9,6 +17,7 @@ html {
 }
 body {
   margin: 0;
+  background-color: var(--white);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -24,7 +33,7 @@ h2 {
   font-weight: bold;
 }
 span {
-  color: orange;
+  color: var(--contrast-color);
   font-size: 14px;
   font-weight: bold;
 }
@@ -34,6 +43,9 @@ p {
 img {
   height: 100%;
   width: 100%;
+}
+button:hover{
+  cursor: pointer;
 }
 
 /*Scrollbar*/

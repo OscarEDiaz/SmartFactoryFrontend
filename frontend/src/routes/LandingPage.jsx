@@ -7,7 +7,9 @@ import '../styles/landingPage.css'
 export const LandingPage = () => {
   return (
     <section id='Landing'>
+
       <CustomNavbar/>
+
       <section id='landing-01' className='container-cc'>
         <div className="landing-01-container">
           <div className='msg-block'>
@@ -19,8 +21,10 @@ export const LandingPage = () => {
           <div id='img-01'>
             <img src={require("../assets/images/illustrations/robotics-Illustration_04.png")} alt="img-1" />
           </div>
+          <div className="blue-gradient-polygon"></div>
         </div>
       </section>
+
       <Footer/>
     </section>
   )
