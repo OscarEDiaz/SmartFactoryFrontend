@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'tt_lakes_neue';
+    src: url('../assets/fonts/TT\ Lakes\ Neue\ Trial\ Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lato';
+    src: url('../assets/fonts/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,7 +1,12 @@
+@import url('./fonts.css');
+
 /*Variables css*/
 :root {
   --NAV-HEIGHT: 50px;
 
+  /*Fonts*/
+  --titleFont: 'tt_lakes_neue';
+  --textFont: 'lato';
   /*Color pallette*/
   --contrast-color: orange;
   --dark-contrast: rgb(211, 137, 0);
@@ -31,6 +36,8 @@ code {
 h2 {
   font-size: 36px;
   font-weight: bold;
+  font-family: var(--titleFont);
+  letter-spacing: 5px;
 }
 span {
   color: var(--contrast-color);
@@ -39,6 +46,7 @@ span {
 }
 p {
   font-size: 12px;
+  font-family: var(--textFont);
 }
 img {
   height: 100%;
@@ -46,6 +54,9 @@ img {
 }
 button:hover{
   cursor: pointer;
+}
+nav{
+  height: 50px;
 }
 
 /*Scrollbar*/
