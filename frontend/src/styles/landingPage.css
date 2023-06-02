@@ -13,11 +13,12 @@
 }
 .msg-block{
     max-width: 450px;
-    transform: translateY(-5rem);
+    transform: translateY(-6rem);
     z-index: 1;
     color: var(--white);
 }
 .msg-block button{
+    font-family: var(--titleFont);
     background-color: var(--contrast-color);
     color: var(--strong-blue);
     border: 0;
@@ -34,7 +35,7 @@
     position: absolute;
     max-width: 600px;
     right: 8rem;
-    transform: translateY(4rem);
+    transform: translateY(2rem);
     transition: all 400ms ease;
 }
 .blue-gradient-polygon{
@@ -74,9 +75,10 @@
     }
     .msg-block{
         text-align: center;
-        transform: translateY(-5px);
+        transform: translateY(0);
     }
     .msg-block h2{
+        font-size: 30px;
         margin: 10px 0;
     }
     #img-01{
@@ -90,5 +92,17 @@
     .blue-gradient-polygon::before{
         width: 100%;
         clip-path: polygon(100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .msg-block h2{
+        font-size: 22px;
+    }
+    .msg-block button{
+        font-size: 12px;
+    }
+    .msg-block p{
+        font-size: 10px;
     }
 }
