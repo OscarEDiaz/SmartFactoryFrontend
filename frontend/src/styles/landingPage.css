@@ -17,19 +17,8 @@
     z-index: 1;
     color: var(--white);
 }
-.msg-block button{
-    font-family: var(--titleFont);
-    background-color: var(--contrast-color);
-    color: var(--strong-blue);
-    border: 0;
-    margin-top: 1rem;
-    padding: 10px;
-    font-size: 14px;
-    font-weight: bold;
-    transition: all 400ms ease;
-}
-.msg-block button:hover{
-    background-color: var(--dark-contrast);
+.msg-block .btn-contrast{
+  margin-top: 1rem;
 }
 #img-01{
     position: absolute;
@@ -64,7 +53,7 @@
         right: 3rem;
     }
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 980px) {
     #landing-01{
         margin-top: 3rem;
         height: fit-content;

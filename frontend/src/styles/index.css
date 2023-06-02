@@ -9,7 +9,7 @@
   --textFont: 'lato';
   /*Color pallette*/
   --contrast-color: orange;
-  --dark-contrast: rgb(211, 137, 0);
+  --dark-contrast: rgb(197, 128, 0);
   --middle-blue: blue;
   --strong-blue: rgb(0, 0, 80);
   --black: #1a1a1a;
@@ -79,4 +79,66 @@ nav{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.btn-contrast{
+  font-family: var(--titleFont);
+  background-color: var(--contrast-color);
+  color: var(--strong-blue);
+  border: 0;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 400ms ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.btn-contrast:hover{
+  letter-spacing: 5px;
+}
+.btn-sm{
+  padding: 7px;
+  font-size: 12px;
+}
+.customNavbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+.nav-left, .nav-center, .nav-right{
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+.nav-center{
+  justify-content: space-around;
+}
+.nav-right{
+  justify-content: end;
+}
+.nav-links, .nav-items{
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+.nav-links{
+  justify-content: space-around;
+}
+.nav-links .navItem{
+  text-decoration: none;
+  padding: 15px;
+  font-size: 14px;
+  font-family: var(--textFont);
+  font-weight: bold;
+  color: var(--white);
+  transition: all 400ms ease;
+}
+.nav-links .navItem:hover{
+  color: var(--contrast-color);
+}
+.navItem{
+  list-style: none;
+}
+.nav-left span{
+  font-family: var(--titleFont);
+  font-size: 14px;
+  letter-spacing: 3px;
 }
