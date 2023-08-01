@@ -8,10 +8,10 @@
   --titleFont: 'tt_lakes_neue';
   --textFont: 'lato';
   /*Color pallette*/
-  --contrast-color: orange;
-  --dark-contrast: rgb(197, 128, 0);
-  --middle-blue: blue;
-  --strong-blue: rgb(0, 0, 80);
+  --contrast-color: #F58A07;
+  --dark-contrast: #dd7900;
+  --middle-blue: #084887;
+  --strong-blue: #032B43;
   --black: #1a1a1a;
   --white: #f0f0f0;
 }
@@ -136,6 +136,9 @@ nav{
 }
 .navItem{
   list-style: none;
+}
+.nav-left a{
+  text-decoration: none;
 }
 .nav-left span{
   font-family: var(--titleFont);
