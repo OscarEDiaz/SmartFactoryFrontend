@@ -11,7 +11,7 @@ export const CustomNavbar = (props) => {
     <nav className="customNavbar">
 
       <div className="nav-left">
-        <span>SMART FACTORY</span>
+        <Link to='/'><span>SMART FACTORY</span></Link>
       </div>
       
       <div className="nav-center">
