@@ -1,13 +1,5 @@
 # Node.js dependencies
-frontend/node_modules/
-frontend/build/
-frontend/.env
-.DS_Store
-
-# Python dependencies
-venv/
-backend/__pycache__/
-backend/*.pyc
+node_modules/
 
 # IDE and editor files
 .vscode/
