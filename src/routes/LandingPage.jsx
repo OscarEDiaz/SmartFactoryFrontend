@@ -1,8 +1,7 @@
-import { CustomNavbar, CustomButton } from '../components/indexComponents'
-import { Footer } from '../components/Footer'
+import { CustomNavbar, CustomButton, Footer } from '../components/misc/index'
 import { Link } from 'react-router-dom';
 
-import '../styles/landingPage.css'
+import '../styles/landing_page/landingPage.css'
 
 export const LandingPage = () => {
 
@@ -17,9 +16,7 @@ export const LandingPage = () => {
   }
   return (
     <section id='Landing'>
-
       <CustomNavbar links={navbar.links} items={navbar.items}/>
-
       <section id='landing-01' className='container-cc'>
         <div className="landing-01-container">
           <div className='msg-block'>
@@ -33,7 +30,6 @@ export const LandingPage = () => {
           <div className="blue-gradient-polygon"></div>
         </div>
       </section>
-
       <Footer/>
     </section>
   )

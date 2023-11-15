@@ -1,5 +1,13 @@
 @import url('./fonts.css');
 
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
 /*Variables css*/
 :root {
   --NAV-HEIGHT: 50px;
@@ -7,13 +15,23 @@
   /*Fonts*/
   --titleFont: 'tt_lakes_neue';
   --textFont: 'lato';
+  
   /*Color pallette*/
   --contrast-color: #F58A07;
+  --contrast-color-transparent: rgba(245, 138, 7, 0.5);
   --dark-contrast: #dd7900;
   --middle-blue: #084887;
   --strong-blue: #032B43;
   --black: #1a1a1a;
   --white: #f0f0f0;
+
+  --confirmation-color: rgb(23, 217, 23);
+  --confirmation-color-transparent: rgba(23, 217, 23, 0.5);
+  --confirmation-color-darker: rgb(16, 165, 16);
+
+  --cancelation-color: rgb(225, 29, 29);
+  --cancelation-color-transparent: rgb(225, 29, 29, 0.5);
+  --cancelation-color-darker: rgb(155, 21, 21);
 }
 
 /*Etiquetas base*/

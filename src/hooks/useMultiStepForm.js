@@ -14,7 +14,13 @@ const useMultiStepForm = (initialStep = 0) => {
     setStep((prevStep) => prevStep - 1);
   };
 
-  return { step, handleNextStep, handlePrevStep };
+  const reset = (e) => {
+    e.preventDefault();
+
+    setStep(initialStep);
+  }
+
+  return { step, handleNextStep, handlePrevStep, reset };
 };
 
 export default useMultiStepForm;

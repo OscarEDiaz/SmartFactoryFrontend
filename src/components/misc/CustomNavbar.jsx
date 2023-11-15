@@ -8,12 +8,10 @@ export const CustomNavbar = (props) => {
   const items = props.items ? props.items : [];
 
   return (
-    <nav className="customNavbar">
-
+    <nav className="customNavbar" style={{'backgroundColor': `${props.isLanding ? 'transparent' : 'var(--middle-blue)'}`}}>
       <div className="nav-left">
         <Link to='/'><span>SMART FACTORY</span></Link>
       </div>
-      
       <div className="nav-center">
         <ul className='nav-links'>
           {links.map((link, index) => (
@@ -21,7 +19,6 @@ export const CustomNavbar = (props) => {
           ))}
         </ul>
       </div>
-      
       <div className="nav-right">
         <ul className='nav-items'>
           {items.map((item, index) => (
@@ -29,7 +26,6 @@ export const CustomNavbar = (props) => {
           ))}
         </ul>
       </div>
-    
     </nav>
   )
 }

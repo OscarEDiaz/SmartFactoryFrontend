@@ -1,5 +1,5 @@
 import { DragDropContext } from 'react-beautiful-dnd';
-import { StrictModeDroppable as Droppable } from '../helpers/StrictModeDroppable'
+import { StrictModeDroppable as Droppable } from '../../helpers/StrictModeDroppable'
 
 export const Drop = (props) => {
 

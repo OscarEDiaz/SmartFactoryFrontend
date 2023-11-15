@@ -8,6 +8,7 @@ export const Drag = (props) => {
         <div
             id={`drag_${props.id}`}
             ref={provided.innerRef}
+            style={{'backgroundColor': 'red'}}
             {...provided.draggableProps}
             {...provided.dragHandleProps}
         >
